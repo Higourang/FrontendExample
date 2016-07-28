@@ -1,0 +1,4 @@
+#Ignore these folders in order to keep the code clean.
+
+node/
+node_modules/
