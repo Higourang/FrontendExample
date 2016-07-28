@@ -1,23 +1,24 @@
 module.exports=function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-browserify');
 	
 	grunt.initConfig({
+		browserify: {
+			js: {
+			 // A single entry point for our app
+			 src: 'src/main/javascript/dependencies.js',
+			 // Compile to a single file to add a script tag for in your HTML
+			 dest: 'src/main/webapp/assets/js/dependencies.js'
+			} 
+		},
 		jshint: {
-			files: ['Gruntfile.js',
+			//Check syntax of listed files
+			files: [
+	        'Gruntfile.js',
 			'src/main/javascript/*.js',
 			'src/test/javascript/*.js']
-		},
-		phantom: {
-			default_options: {
-				
-			},
-			custom_options: {
-				options: {
-					port: 5555
-				}
-			},
-			
 		}
 	});
-	grunt.registerTask('default', ['jshint']);
+	// The default tasks to run when you type: grunt
+	grunt.registerTask('default', ['jshint','browserify']);
 };
