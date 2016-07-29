@@ -16,7 +16,8 @@ module.exports=function(grunt){
 			files: [
 	        'Gruntfile.js',
 			'src/main/javascript/*.js',
-			'src/test/javascript/*.js']
+			'src/test/javascript/*.js',
+			'src/main/webapp/app/*/*.js']
 		}
 	});
 	// The default tasks to run when you type: grunt

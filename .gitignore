@@ -3,3 +3,6 @@
 node/
 node_modules/
 target/
+
+#Ignore javascript generated files.
+src/main/webapp/assets
