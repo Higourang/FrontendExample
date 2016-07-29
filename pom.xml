@@ -40,7 +40,8 @@
 							<goal>install-node-and-npm</goal>
 						</goals>
 						<configuration>
-							<npmVersion>2.15.5</npmVersion>
+							<!-- Verify npm dependencies compatibility -->
+							<npmVersion>3.0.0</npmVersion>
 							<nodeVersion>v4.4.5</nodeVersion>
 						</configuration>
 					</execution>
