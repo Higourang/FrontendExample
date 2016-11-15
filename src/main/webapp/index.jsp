@@ -1,9 +1,11 @@
-<html ng-app="application">
+<html ng-app="app">
 <head>
 <title>Javascript dependencies with npm and browserify</title>
 <!-- Javascript dependencies -->
 <script type="text/javascript" src="assets/js/dependencies.js"></script>
 <script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/app.routes.js"></script>
+<script type="text/javascript" src="app/app.config.js"></script>
 <script type="text/javascript" src="app/repository/RepositoryListCtrl.js"></script>
 <script type="text/javascript" src="app/repository/repositoryService.js"></script>
 </head>
@@ -28,7 +30,7 @@
 					<ul class="nav navbar-nav">
 						<!-- ui-sref-active adds a css class when element is selected -->
 						<!-- ui-sref sets the route  -->
-						<li ui-sref-active="active"><a ui-sref="gitrepository">Repositories</a></li>
+						<li ui-sref-active="active"><a ui-sref="repository">C&aacute;talogo</a></li>
 					</ul>
 				</div>
 			</div>
